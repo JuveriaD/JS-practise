@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ebf6ff;
+}
+
+#nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#nav-bar ul a {
+  margin: 0 0 0 22px;
+  text-decoration: none;
+}
+
+#nav-bar ul a li {
+  list-style-type: none;
+}
+
+.AK-head {
+  color: #659cef;
+  font-family: 'Tai Heritage Pro', serif;
+}
+
+main {
+  width: 100%;
+  position: relative;
+}
+
+main .flickity {
+  margin: 9px 9px 9px 9px;
+  width: 99%;
+  border: 2px solid #f0e7e7;
+}
+
+main .flickity .carousel-cell {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  text-align: center;
+}
+
+main .flickity .carousel-cell img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main .flickity .carousel-cell #slider-heading1 #red-heading {
+  color: red;
+}
+
+main .flickity .flickity-page-dots {
+  display: none;
+}
+
+main #container-2 {
+  position: relative;
+  border: 2px solid #f0e7e7;
+  width: 99%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  margin: 9px 9px 9px 9px;
+}
+
+main #container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+}
+
+main #container-3 #Emp-1,
+main #container-3 #Emp-2 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #f0e7e7;
+}
+
+main #container-3 .img-div {
+  width: 100%;
+  padding: 15px;
+}
+
+main #container-3 .img-div img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #container-3 .emp > .con3-txt {
+  padding: 15px;
+}
+
+main #container-3 .emp > .con3-txt .con3-heading {
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+/*cell number*/
+.carousel-cell:before {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  main #container-3 {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #container-3 #Emp-1,
+  main #container-3 #Emp-2 {
+    width: 100%;
+    margin: 5px;
+  }
+  main #container-3 .img-div img {
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
