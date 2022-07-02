@@ -6,7 +6,15 @@
           box-sizing: border-box;
 }
 
-#nav-bar {
+html {
+  font-size: 10px;
+}
+
+body {
+  /*cell number*/
+}
+
+body header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,9 +29,46 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #ebf6ff;
+  padding: 10px;
 }
 
-#nav-bar ul {
+body header .AK-head {
+  color: #659cef;
+  font-family: 'Tai Heritage Pro', serif;
+}
+
+body header a {
+  text-decoration: none;
+}
+
+body header #Nav-heading {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+body header #nav-bar {
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body header #nav-bar .nav-menu {
+  margin: 31px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,32 +84,49 @@
           justify-content: center;
 }
 
-#nav-bar ul a {
-  margin: 0 0 0 22px;
-  text-decoration: none;
-}
-
-#nav-bar ul a li {
+body header #nav-bar .nav-menu li {
   list-style-type: none;
 }
 
-.AK-head {
-  color: #659cef;
-  font-family: 'Tai Heritage Pro', serif;
+body header #nav-bar .nav-menu li a {
+  margin: 0 0 0 22px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
-main {
+body header #nav-bar .nav-menu li a:hover {
+  color: #659cef;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body header #nav-bar .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+body header #nav-bar .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: blue;
+}
+
+body main {
   width: 100%;
   position: relative;
 }
 
-main .flickity {
+body main .flickity {
   margin: 9px 9px 9px 9px;
   width: 99%;
   border: 2px solid #f0e7e7;
 }
 
-main .flickity .carousel-cell {
+body main .flickity .carousel-cell {
   width: 100%;
   height: 300px;
   display: -webkit-box;
@@ -83,22 +145,22 @@ main .flickity .carousel-cell {
   text-align: center;
 }
 
-main .flickity .carousel-cell img {
+body main .flickity .carousel-cell img {
   height: 300px;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-main .flickity .carousel-cell #slider-heading1 #red-heading {
+body main .flickity .carousel-cell #slider-heading1 #red-heading {
   color: red;
 }
 
-main .flickity .flickity-page-dots {
+body main .flickity .flickity-page-dots {
   display: none;
 }
 
-main #container-2 {
+body main #container-2 {
   position: relative;
   border: 2px solid #f0e7e7;
   width: 99%;
@@ -124,18 +186,17 @@ main #container-2 {
   margin: 9px 9px 9px 9px;
 }
 
-main #container-3 {
+body main #container-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: absolute;
   width: 100%;
 }
 
-main #container-3 #Emp-1,
-main #container-3 #Emp-2 {
+body main #container-3 #Emp-1,
+body main #container-3 #Emp-2 {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,33 +215,111 @@ main #container-3 #Emp-2 {
   border: 2px solid #f0e7e7;
 }
 
-main #container-3 .img-div {
+body main #container-3 .img-div {
   width: 100%;
   padding: 15px;
 }
 
-main #container-3 .img-div img {
+body main #container-3 .img-div img {
   height: 400px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-main #container-3 .emp > .con3-txt {
+body main #container-3 .emp > .con3-txt {
   padding: 15px;
 }
 
-main #container-3 .emp > .con3-txt .con3-heading {
+body main #container-3 .emp > .con3-txt .con3-heading {
   font-family: 'Hind Madurai', sans-serif;
 }
 
-/*cell number*/
-.carousel-cell:before {
+body .carousel-cell:before {
   display: block;
 }
 
-@media screen and (max-width: 650px) {
-  main #container-3 {
+body footer {
+  border: 2px solid #f0e7e7;
+  margin: 7px;
+}
+
+body footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 300px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body footer .footer-content ul {
+  margin-top: 10px;
+}
+
+body footer .footer-content ul a {
+  color: #659cef;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+body footer .footer-content ul li {
+  list-style-type: none;
+  padding: 6px 0;
+}
+
+body footer .footer-content ul li a {
+  color: black;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  body header #nav-bar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  body header #nav-bar .hamburger {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    z-index: 1;
+  }
+  body header #nav-bar .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  body header #nav-bar .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  body header #nav-bar .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  body header #nav-bar .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    background-color: #ebf6ff;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  body header #nav-bar .nav-menu .nav-item {
+    margin: 16px 0;
+  }
+  body header #nav-bar .nav-menu.active {
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  body main #container-3 {
     -ms-flex-line-pack: center;
         align-content: center;
     -webkit-box-pack: center;
@@ -194,13 +333,23 @@ main #container-3 .emp > .con3-txt .con3-heading {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main #container-3 #Emp-1,
-  main #container-3 #Emp-2 {
+  body main #container-3 #Emp-1,
+  body main #container-3 #Emp-2 {
     width: 100%;
     margin: 5px;
   }
-  main #container-3 .img-div img {
+  body main #container-3 .img-div img {
     height: 300px;
+  }
+  body footer .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  body footer .footer-content ul {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
